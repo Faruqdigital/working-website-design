@@ -146,14 +146,13 @@ background-color: #6DDBE1;
 }
 
 .footer-content h2::before {
-    content: "";
     width: 179px;
     height: 186px;
     background-image: url("images/image-5.png");
     background-size: cover;
     position: absolute;
-    top: -90px;
-    left: -64px;
+    top: 90px;
+    left: 64px;
     z-index: -1;
 }
 
@@ -166,4 +165,64 @@ footer p{
 
 .love{
     color: hsl(4, 86%, 51%);
+}
+
+
+/* media scrteen */
+
+@media (max-width: 600px) {
+
+    /* header */
+.logo {
+    margin: 0 auto;
+    font-size: 24px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul{
+    justify-content: center;
+}
+
+/* hero section */
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content h2 {
+    font-size: 30px;
+}
+
+.hero-content h2::before {
+    width: 130px;
+    height: 140px;
+    top: -70px;
+    left: -60px;
+}
+
+.hero-content p {
+    font-size: 14px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    margin: 0 60px;
+}
+
+.footer-content h2 {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.footer-img{
+}
 }
